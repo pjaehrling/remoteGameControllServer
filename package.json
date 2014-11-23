@@ -1,0 +1,16 @@
+{
+  "name": "control-middleware",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Philipp Jährling <info@philippjaehrling.de>",
+  "description": "prototype middleware to route remote control signals",
+
+  "dependencies" : {
+    "socket.io": "~0.9.6"
+  },
+    
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}

@@ -1,0 +1,27 @@
+ <!DOCTYPE HTML>
+<html>
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SENDER</title>
+    </head>
+    <body>
+        <p>This is a control sender test</p>
+        <pre class="output"></pre>
+
+        <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script -->
+        <script src="/libs/jquery.min.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/sender/sender.js"></script>
+        <script src="/sender/orientationSender.js"></script>
+        <script type="text/javascript">
+            var sender = new RC.OrientationSender();
+            var wsHost = "http://" + location.hostname + ":8080";
+            sender.initSocket(wsHost);
+            sender.start();
+        </script>
+    </body>
+</html>
